@@ -5,6 +5,7 @@ import { SignedOut, SignUpButton } from '@clerk/nextjs';
 
 export default function Home() {
   const [showNotificationDialog, setShowNotificationDialog] = useState(false);
+  const [showAudioDialog, setShowAudioDialog] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -24,11 +25,33 @@ export default function Home() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
           {/* Hero Product */}
-          <div className="col-span-full group p-8 rounded-2xl shadow-lg bg-gradient-to-r from-blue-500 to-purple-600 border border-black/10 dark:border-white/10 cursor-not-allowed opacity-80">
+          <div onClick={() => setShowAudioDialog(true)} className="col-span-full group p-8 rounded-2xl shadow-lg bg-gradient-to-r from-blue-500 to-purple-600 border border-black/10 dark:border-white/10 cursor-pointer hover:opacity-90 transition-opacity">
             <p className="inline-block px-3 py-1 rounded-full bg-yellow-400/10 text-sm font-semibold text-yellow-400 mb-2 backdrop-blur-sm">Hang Tight – Coming Soon</p>
             <h2 className="text-2xl font-semibold mb-3 text-white group-hover:text-white/90 transition-colors">Whispr - Audio to Text Converter</h2>
             <p className="text-lg text-white/90">Transform your audio recordings into accurate text transcriptions powered by cutting-edge AI technology.</p>
           </div>
+
+          <Dialog open={showAudioDialog} onOpenChange={setShowAudioDialog}>
+            <DialogContent className="sm:max-w-[500px] bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-slate-900">
+              <DialogTitle className="text-xl text-white font-semibold mb-4">Service Under Development</DialogTitle>
+              <div className="space-y-4">
+                <p className="text-gray-700 dark:text-gray-300">
+                  We are currently fine-tuning our Audio to Text conversion service to ensure it meets our high standards for accuracy and reliability. This service will be available soon.
+                </p>
+                <div className="bg-blue-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                  <h3 className="font-medium text-blue-800 dark:text-blue-300 mb-2">Meanwhile, explore our other services:</h3>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li>Generate QR codes with QReate</li>
+                    <li>Create color palettes using Tintella</li>
+                    <li>Merge PDF files with Bindly</li>
+                  </ul>
+                </div>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Thank you for your interest.
+                </p>
+              </div>
+            </DialogContent>
+          </Dialog>
 
           {/* Active Services */}
           <a href="/qr-generator" className="group p-8 rounded-2xl shadow-lg bg-white dark:bg-gray-800 border border-black/10 dark:border-white/10 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
