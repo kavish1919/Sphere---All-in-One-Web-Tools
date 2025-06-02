@@ -82,7 +82,10 @@ export default function RootLayout({
             </div>
             
             {/* Mobile Navigation */}
-            <div className="md:hidden">
+            <div className="md:hidden flex items-center gap-4">
+              <SignedIn>
+                <UserButton afterSignOutUrl="/" />
+              </SignedIn>
               <Dialog>
                 <DialogTrigger className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
                   <Menu className="w-6 h-6" />
@@ -123,9 +126,6 @@ export default function RootLayout({
                         </button>
                       </SignUpButton>
                     </SignedOut>
-                    <SignedIn>
-                      <UserButton afterSignOutUrl="/" />
-                    </SignedIn>
                   </nav>
                 </DialogContent>
               </Dialog>
@@ -159,4 +159,5 @@ export default function RootLayout({
     </ClerkProvider>
   )
 }
+
 
