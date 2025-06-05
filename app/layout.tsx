@@ -12,6 +12,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Dialog, DialogContent, DialogTrigger, DialogTitle } from '@/components/ui/dialog'
 import { Menu } from 'lucide-react'
 import './globals.css'
+import ToolSearch from '@/components/ToolSearch'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -38,6 +39,15 @@ export default function RootLayout({
             </div>
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-6">
+              <ToolSearch />
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeTVzyCGRcSEtNyTBCm6pd6pfEtPk_aG9tkBHzBvJxsPJQgLA/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium hover:text-gray-600 transition-colors"
+              >
+                We&apos;re Hiring
+              </a>
               <Dialog>
                 <DialogTrigger className="text-sm font-medium hover:text-gray-600 transition-colors">
                   About
@@ -86,6 +96,15 @@ export default function RootLayout({
                 <DialogContent className="w-[280px] p-6 bg-white text-black [&>*]:text-black border-0 shadow-none">
                   <DialogTitle className="sr-only">Navigation Menu</DialogTitle>
                   <nav className="flex flex-col gap-4">
+                    <ToolSearch />
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSeTVzyCGRcSEtNyTBCm6pd6pfEtPk_aG9tkBHzBvJxsPJQgLA/viewform?usp=dialog"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-left text-sm font-medium hover:text-gray-600 transition-colors"
+                    >
+                      We&apos;re Hiring
+                    </a>
                     <Dialog>
                       <DialogTrigger asChild>
                         <button className="text-left text-sm font-medium hover:text-gray-600 transition-colors">
@@ -152,3 +171,4 @@ export default function RootLayout({
     </ClerkProvider>
   )
 }
+
