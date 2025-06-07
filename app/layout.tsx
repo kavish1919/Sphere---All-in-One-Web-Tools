@@ -40,6 +40,27 @@ export default function RootLayout({
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-6">
               <ToolSearch />
+              <Dialog>
+                      <DialogTrigger asChild>
+                        <button className="text-left text-sm font-medium hover:text-gray-600 transition-colors">
+                          About
+                        </button>
+                      </DialogTrigger>
+                      <DialogContent className="sm:max-w-[600px] bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-slate-900 text-gray-800 dark:text-gray-200">
+                        <DialogTitle className="text-xl font-semibold mb-4">About SPHERE</DialogTitle>
+                        <div className="text-justify space-y-4 py-4">
+                          <p>
+                            Sphere is a tech-driven initiative, focused on delivering innovative online software tools that streamline and enhance everyday digital experiences. As we grow, our vision extends beyond software &mdash; with future ventures planned in online data analysis, intelligent automation, and a range of cutting-edge digital services.
+                          </p>
+                          <p>
+                            The name &ldquo;Sphere&rdquo; reflects our core philosophy &mdash; just like a sphere has infinite tangents in every direction, our company aims to create meaningful impact across diverse domains of technology and business. We believe in expanding our reach, evolving continuously, and driving innovation wherever opportunity arises.
+                          </p>
+                          <p>
+                            At Sphere, we&apos;re not just building tools &mdash; we&apos;re building a connected digital future.
+                          </p>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeTVzyCGRcSEtNyTBCm6pd6pfEtPk_aG9tkBHzBvJxsPJQgLA/viewform?usp=dialog"
                 target="_blank"
@@ -48,25 +69,6 @@ export default function RootLayout({
               >
                 We&apos;re Hiring
               </a>
-              <Dialog>
-                <DialogTrigger className="text-sm font-medium hover:text-gray-600 transition-colors">
-                  About
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-[600px] bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-slate-900 text-gray-800 dark:text-gray-200">
-                  <DialogTitle className="text-xl font-semibold mb-4">About SPHERE</DialogTitle>
-                  <div className="text-justify space-y-4 py-4">
-                    <p>
-                      Sphere is a tech-driven initiative, focused on delivering innovative online software tools that streamline and enhance everyday digital experiences. As we grow, our vision extends beyond software &mdash; with future ventures planned in online data analysis, intelligent automation, and a range of cutting-edge digital services.
-                    </p>
-                    <p>
-                      The name &ldquo;Sphere&rdquo; reflects our core philosophy &mdash; just like a sphere has infinite tangents in every direction, our company aims to create meaningful impact across diverse domains of technology and business. We believe in expanding our reach, evolving continuously, and driving innovation wherever opportunity arises.
-                    </p>
-                    <p>
-                      At Sphere, we&apos;re not just building tools &mdash; we&apos;re building a connected digital future.
-                    </p>
-                  </div>
-                </DialogContent>
-              </Dialog>
               <SignedOut>
                 <SignInButton mode="modal">
                   <button className="text-sm font-medium hover:text-gray-600 transition-colors">
