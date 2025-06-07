@@ -97,14 +97,6 @@ export default function RootLayout({
                   <DialogTitle className="sr-only">Navigation Menu</DialogTitle>
                   <nav className="flex flex-col gap-4">
                     <ToolSearch />
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSeTVzyCGRcSEtNyTBCm6pd6pfEtPk_aG9tkBHzBvJxsPJQgLA/viewform?usp=dialog"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-left text-sm font-medium hover:text-gray-600 transition-colors"
-                    >
-                      We&apos;re Hiring
-                    </a>
                     <Dialog>
                       <DialogTrigger asChild>
                         <button className="text-left text-sm font-medium hover:text-gray-600 transition-colors">
@@ -126,6 +118,14 @@ export default function RootLayout({
                         </div>
                       </DialogContent>
                     </Dialog>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSeTVzyCGRcSEtNyTBCm6pd6pfEtPk_aG9tkBHzBvJxsPJQgLA/viewform?usp=dialog"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-left text-sm font-medium hover:text-gray-600 transition-colors"
+                    >
+                      We&apos;re Hiring
+                    </a>
                     <SignedOut>
                       <SignInButton mode="modal">
                         <button className="text-left text-sm font-medium hover:text-gray-600 transition-colors">
