@@ -110,6 +110,34 @@ export default function Home() {
 
           {/* Service Demonstrations */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 col-span-full">
+            {/* Slimmage - Image Resize and Compress Demo */}
+            <div className="group p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-lg border border-black/10 dark:border-white/10 hover:shadow-xl transition-all duration-300 ease-in-out">
+              <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">How Slimmage Works</h2>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4 group/step hover:scale-[1.02] transition-transform duration-200">
+                  <span className="flex-none w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-lg font-bold text-gray-900 dark:text-white">1</span>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Upload Your Image</h3>
+                    <p className="text-base text-gray-700 dark:text-gray-300">Select an image file from your device.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 group/step hover:scale-[1.02] transition-transform duration-200">
+                  <span className="flex-none w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-lg font-bold text-gray-900 dark:text-white">2</span>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Adjust Settings</h3>
+                    <p className="text-base text-gray-700 dark:text-gray-300">Set your desired width, height, and quality for compression.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 group/step hover:scale-[1.02] transition-transform duration-200">
+                  <span className="flex-none w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-lg font-bold text-gray-900 dark:text-white">3</span>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Download Optimized Image</h3>
+                    <p className="text-base text-gray-700 dark:text-gray-300">Get your resized and compressed image instantly.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* QR Generator Demo */}
             <div className="group p-8 rounded-3xl bg-white dark:bg-gray-800 shadow-lg border border-black/10 dark:border-white/10 hover:shadow-xl transition-all duration-300 ease-in-out">
               <h2 className="text-2xl font-bold mb-8 text-gray-900 dark:text-white">How QR Generator Works</h2>
@@ -235,4 +263,5 @@ export default function Home() {
     </div>
   );
 }
+
 
