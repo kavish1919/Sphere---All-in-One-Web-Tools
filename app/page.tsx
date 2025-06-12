@@ -32,10 +32,15 @@ export default function Home() {
               <p className="text-lg text-white/90">One tool to shrink, resize, and optimize your images.</p>
             </a>
 
-            <div onClick={() => setShowAudioDialog(true)} className="md:col-span-2 group p-8 rounded-2xl shadow-lg bg-gradient-to-r from-blue-500 to-purple-600 border border-black/10 dark:border-white/10 cursor-pointer hover:opacity-90 transition-opacity">
+            <a href="/wordora" className="group p-8 rounded-2xl shadow-lg bg-gradient-to-r from-pink-500 to-rose-600 border border-black/10 dark:border-white/10 hover:opacity-90 transition-opacity">
+              <h2 className="text-2xl font-semibold mb-3 text-white group-hover:text-white/90 transition-colors">Wordora</h2>
+              <p className="text-lg text-white/90">Your Daily Dose of English Confidence.</p>
+            </a>
+
+            <div onClick={() => setShowAudioDialog(true)} className="group p-8 rounded-2xl shadow-lg bg-gradient-to-r from-blue-500 to-purple-600 border border-black/10 dark:border-white/10 cursor-pointer hover:opacity-90 transition-opacity">
               <p className="inline-block px-3 py-1 rounded-full bg-yellow-400/10 text-sm font-semibold text-yellow-400 mb-2 backdrop-blur-sm">Hang Tight – Coming Soon</p>
               <h2 className="text-2xl font-semibold mb-3 text-white group-hover:text-white/90 transition-colors">Whispr - Audio to Text Converter</h2>
-              <p className="text-lg text-white/90">Transform your audio recordings into accurate text transcriptions powered by cutting-edge AI technology.</p>
+              <p className="text-lg text-white/90">Transform your audio recordings into accurate text transcriptions.</p>
             </div>
 
           </div>
@@ -263,5 +268,3 @@ export default function Home() {
     </div>
   );
 }
-
-
