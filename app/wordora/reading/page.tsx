@@ -139,7 +139,8 @@ export default function ReadingPage() {
             "Suddenly the vampire felt tired. He had been killing for many centuries. Listening to them was depressing. How could he feel good by drinking the blood of either of these disgusting creatures?",
             "He looked down at their terrified faces and shouted, 'BAD BLOOD!'",
             "And with that, he disappeared into the night air and left Emma and David alone together. Together, as they had promised, for the rest of their lives.",
-            "Story written by Clive Lane and adapted by Nicola Prentis."
+            "",
+            " - Story written by Clive Lane and adapted by Nicola Prentis."
           ].map((paragraph, pIdx) => (
             <p key={pIdx} className="text-gray-700 mb-4">
               {paragraph.split(/(\b\w+\b|[.,!?;:'"\s]+)/g).map((part, sIdx) => {
