@@ -162,6 +162,9 @@ export default function RootLayout({
                 <p className="text-xs text-gray-500 dark:text-gray-500">
                   We aim to respond to all inquiries within 48 business hours.
                 </p>
+                <p className="text-xs text-gray-500 dark:text-gray-500">
+                  Developed by Kavish Bishnoi🔥.
+                </p>
               </div>
             </div>
           </footer>
