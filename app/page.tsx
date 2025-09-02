@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowNotificationDialog(true);
-    }, 1000);
+    }, 0000);
 
     return () => clearTimeout(timer);
   }, []);
