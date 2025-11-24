@@ -28,13 +28,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 col-span-full">
 
             <a href="/image-resizer" className="group p-8 rounded-2xl shadow-lg bg-gradient-to-r from-green-500 to-teal-600 border border-black/10 dark:border-white/10 hover:opacity-90 transition-opacity">
-              <h2 className="text-2xl font-semibold mb-3 text-white group-hover:text-white/90 transition-colors">Slimmage - Image Resize and Compress</h2>
+              <h2 className="text-2xl font-semibold mb-3 text-white group-hover:text-white/90 transition-colors">Slimmage - Image Resizer and Compressor</h2>
               <p className="text-lg text-white/90">One tool to shrink, resize, and optimize your images.</p>
             </a>
 
-            <a href="/wordora" className="group p-8 rounded-2xl shadow-lg bg-gradient-to-r from-pink-500 to-rose-600 border border-black/10 dark:border-white/10 hover:opacity-90 transition-opacity">
-              <h2 className="text-2xl font-semibold mb-3 text-white group-hover:text-white/90 transition-colors">Wordora</h2>
-              <p className="text-lg text-white/90">Your Daily Dose of English Confidence.</p>
+            <a href="https://sphere-play.vercel.app/" className="group p-8 rounded-2xl shadow-lg bg-gradient-to-r from-pink-500 to-rose-600 border border-black/10 dark:border-white/10 hover:opacity-90 transition-opacity">
+              <h2 className="text-2xl font-semibold mb-3 text-white group-hover:text-white/90 transition-colors">SpherePlay</h2>
+              <p className="text-lg text-white/90">The Instant Real-Time Arcade.</p>
             </a>
 
             <div onClick={() => setShowAudioDialog(true)} className="group p-8 rounded-2xl shadow-lg bg-gradient-to-r from-blue-500 to-purple-600 border border-black/10 dark:border-white/10 cursor-pointer hover:opacity-90 transition-opacity">
